@@ -1,35 +1,13 @@
-# Independent beta testing
+# v0.01.013 test checklist
 
-**Version under test:** v0.01.008
+1. Export a ticket backup before replacing `index.html`.
+2. After GitHub Pages refresh, confirm version v0.01.013.
+3. Open Live Football & Odds and switch among Games, My Tickets, Kalshi and Diagnostics. Confirm only one tab's content is shown.
+4. In Games, expand a matchup and open ESPN Gamecast. Return to the notebook and confirm scroll position is preserved.
+5. Refresh ESPN independently. Confirm scores and ticket links appear.
+6. Refresh Kalshi independently. In a successful response, check the market count and exact-match count. In a failure, verify the diagnostics clearly report the browser error.
+7. Use Diagnostics to import a saved Kalshi JSON response. Compare a matching NFL event ticker with the correct ESPN game/date. Try a different date and confirm no incorrect match.
+8. Verify saved tickets, OCR, Positions & Crossovers and backup import/export still work.
+9. Test on iPad Safari and iPhone Safari; optionally test Edge/Chrome. Each browser keeps its own local ticket records.
 
-## Test setup
-- Open the shared GitHub Pages URL on your own device.
-- Record device model, OS, browser and displayed app version.
-- Use synthetic tickets or tickets with sensitive details redacted.
-- Export a backup before destructive testing or clearing browser data.
-
-## Checklist
-- [ ] App loads and shows v0.01.008.
-- [ ] Create a new ticket; verify the form starts blank.
-- [ ] Photograph/scan a ticket; verify ID, teams, spreads, stakes and payouts against the original.
-- [ ] Save two tickets with the same team; check Positions & Crossovers.
-- [ ] Check duplicate handling.
-- [ ] Export from one browser and import into another; compare ticket counts and fields.
-- [ ] Open NFL Live & Kalshi; check schedule, scores, status and refresh.
-- [ ] Check Kalshi market matches; report missing or incorrect matches.
-- [ ] Confirm missing feeds show an error or empty state rather than fabricated data.
-- [ ] Refresh/reopen app; verify tickets persist.
-
-## Bug report template
-
-**Version:**  
-**Device / OS / browser:**  
-**Feature:**  
-**Steps to reproduce:**  
-**Expected:**  
-**Actual:**  
-**Frequency:**  
-**Screenshot (redacted, optional):**  
-
-## Known limitations
-Live data connectivity is not yet independently verified. College football is planned for a future release, not v0.01.008. Browser storage is not shared or automatically synced.
+If Kalshi still reports a browser network/CORS failure, a naming change cannot fix that transport error. Report the error text and whether manual JSON import matches games.

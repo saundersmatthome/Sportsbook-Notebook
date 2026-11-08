@@ -1,33 +1,26 @@
-# Sportsbook Notebook
+# Sportsbook Notebook — v0.01.013
 
-**Current application version: v0.01.008**  
-A browser-based personal sportsbook ticket notebook and live football data testbed.
+Personal browser-based sportsbook ticket notebook with OCR, ticket tracking, live ESPN football scores, experimental spread analytics and read-only Kalshi market-data exploration.
 
-## Open and test
+## Deploy
 
-Use the same GitHub Pages URL supplied by the project owner. No GitHub account is required to open the published app. Each browser stores its own tickets locally; sharing the URL does not share ticket records. Export/import transfers a snapshot manually, not continuously.
+1. Export a backup from the running notebook before updating.
+2. Replace the repository-root `index.html` with the file from this release. Optionally update `README.md`, `CHANGELOG.md`, and `TESTING.md`.
+3. Commit changes and wait for GitHub Pages to publish. Reload Safari; confirm **v0.01.013** appears at the top.
 
-To deploy this package, upload `index.html` and these documentation files to the same GitHub repository. Keep the GitHub Pages publishing configuration unchanged.
+Ticket records remain in the browser's local storage under the existing key. The app does not synchronize data across browsers. Export/import is the supported transfer mechanism.
 
-## Features
+## What's new
 
-- Ticket entry and photo/OCR extraction; review extracted fields before saving.
-- Ticket ledger and Positions & Crossovers with filtering and repeated-team exposure.
-- Duplicate detection, export and import between browsers.
-- v0.01.008: NFL live scoreboard and read-only Kalshi market-data experiment, with game-to-ticket association and refresh controls.
+- Four tabs in Football Live Lab: **Games**, **My Tickets**, **Kalshi**, and **Diagnostics**. Feed controls remain visible above the tabs.
+- Canonical NFL team-code alias matching for Kalshi event tickers, including common alternate codes, with exact date and both-team checks.
+- Kalshi status text now includes the count of exact game matches after a successful market-data import.
+- Kalshi fetch no longer restricts listings to `status=open`; this helps with in-progress listings that have different states, but does not solve cross-origin browser restrictions.
+- Retains the v12 ESPN Gamecast button, ticket notebook, backup/import and OCR.
 
-## Limitations
+## Known limitations
 
-- The external live feeds have not yet been confirmed working on all tester devices.
-- Kalshi outright winner probabilities are **not** spread-cover probabilities. Calibrated spread/parlay forecasts are not implemented.
-- The college-football extension is **planned, not included in v0.01.008**.
-- Do not rely on the app for actual wager settlement.
-- Local browser data may be lost if browser storage is cleared. Export a backup before changing browsers or clearing site data.
-
-## Tester feedback
-
-Include version, browser/device, steps to reproduce, expected result, actual result, and optionally a screenshot with personal data removed. See TESTING.md.
-
-## Release policy
-
-Both testers use the same published version. Update the version number and CHANGELOG.md with every functional release; do not silently change behavior under the same version.
+- The Kalshi endpoint may be blocked by browser cross-origin (CORS) policy. The Diagnostics tab retains manual JSON file/paste import as a fallback. Opening an API URL directly does not prove browser `fetch()` can read it.
+- Market matching is restricted to recognizable NFL matchup tickers, including the ticker's date and both team abbreviations. College football and some market formats may remain unmatched. Ambiguous abbreviations are not guessed.
+- The app does not derive spread-cover probabilities from Kalshi winner quotes. Its live spread-cover estimates are experimental and uncalibrated. No trades or automatic ticket settlement.
+- Game details and tabs are refreshed from third-party services; external feed availability varies.
