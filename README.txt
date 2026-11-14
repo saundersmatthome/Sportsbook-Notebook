@@ -1,0 +1,1 @@
+Sportsbook Notebook v0.01.027 - Auto-create simulated straight/3/4-leg moneyline tickets from loaded ESPN games. Test tickets striped pale red and excluded from real-money totals. Backup before replacing index.html.
