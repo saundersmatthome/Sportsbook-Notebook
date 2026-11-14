@@ -1,1 +1,1 @@
-Sportsbook Notebook v0.01.027 - Auto-create simulated straight/3/4-leg moneyline tickets from loaded ESPN games. Test tickets striped pale red and excluded from real-money totals. Backup before replacing index.html.
+v0.01.028: South Point OCR parser handles ML/spread and separate right-column odds, ticket cost and to collect; ESPN request lock, 60s polling default, stale response guard. Includes v27 simulated ticket generator. Export backup before replacing index.html.
