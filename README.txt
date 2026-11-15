@@ -1,1 +1,1 @@
-Sportsbook Notebook v0.01.031. iPhone Safari photo storage moved to IndexedDB. Export backup before upgrading. Images stored in browser on the current device; JSON export includes photos. Do not clear website data. If migration fails old image data is retained. Not live-device tested.
+v0.02.000 attention-first ticket monitor. Back up before update. ESPN evaluation informational only.
