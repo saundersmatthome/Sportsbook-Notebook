@@ -1,1 +1,1 @@
-v0.01.028: South Point OCR parser handles ML/spread and separate right-column odds, ticket cost and to collect; ESPN request lock, 60s polling default, stale response guard. Includes v27 simulated ticket generator. Export backup before replacing index.html.
+Sportsbook Notebook v0.01.030. OCR patch: accepts 1/2, ½, %, and .5 half-point spreads, signed American odds with absolute value >=100 (no divisibility-by-five or four-digit cap), warns about possible adjacent betting-board column merges without guessing. Test on real scans; preserve backup before deployment.
