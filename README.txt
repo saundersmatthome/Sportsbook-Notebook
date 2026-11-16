@@ -1,1 +1,1 @@
-Sportsbook Notebook v0.02.001. Export backup before upgrade. Archive/restore and protected bulk deletion; historical ESPN game matching is informational, not automatic settlement. ESPN odds never overwrite ticket terms.
+Sportsbook Notebook v0.02.002: diagnostic report, per-leg event date/league and manually persistent ESPN event links. Browser local data; backup before updating. This is not the planned full IndexedDB migration. Confirm all outcomes with sportsbook.
