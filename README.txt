@@ -1,1 +1,1 @@
-v0.02.000 attention-first ticket monitor. Back up before update. ESPN evaluation informational only.
+Sportsbook Notebook v0.02.001. Export backup before upgrade. Archive/restore and protected bulk deletion; historical ESPN game matching is informational, not automatic settlement. ESPN odds never overwrite ticket terms.

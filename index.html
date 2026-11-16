@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#111827"><title>Sportsbook Notebook</title><style>:root{font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;color:#f3f4f6;background:#0b1220}*{box-sizing:border-box}body{margin:0}main{max-width:1050px;margin:auto;padding:18px 14px 90px}header{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:24px;margin:0}small,.muted{color:#aab4c6}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:18px 0}.stat,.ticket,.panel{background:#182235;border:1px solid #334155;border-radius:14px;padding:14px}.stat strong{font-size:23px;display:block;margin-top:6px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}button,.btn{border:1px solid #506079;background:#26344c;color:white;border-radius:10px;padding:10px 12px;font:inherit;cursor:pointer}button.primary{background:#2563eb;border-color:#2563eb}button:focus,input:focus,textarea:focus,select:focus{outline:2px solid #60a5fa}.tickets{display:grid;grid-template-columns:repeat(auto-fill,minmax(265px,1fr));gap:12px}.ticket{position:relative;min-height:205px}.ticket.win{border:2px solid #22c55e}.ticket.loss{border:2px solid #ef4444}.ticket .head{display:flex;justify-content:space-between;align-items:center;gap:6px}.ticket h3{font-size:16px;margin:0}.legs{margin:12px 0;white-space:pre-line;line-height:1.65}.money{display:flex;justify-content:space-between;border-top:1px solid #334155;padding-top:10px}.actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.actions button{padding:7px 10px}.chosen{background:#14532d}.bad{background:#7f1d1d}.panel{margin:15px 0}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}label{display:block;font-size:13px;color:#cbd5e1}input,select,textarea{display:block;width:100%;margin-top:5px;border:1px solid #506079;border-radius:9px;padding:10px;background:#0f172a;color:#fff;font:inherit;color-scheme:dark}select option{background:#0f172a;color:#fff}textarea{min-height:105px} .full{grid-column:1/-1}.hidden{display:none!important}.preview{max-width:100%;max-height:180px;border-radius:8px;margin-top:8px}.notice{font-size:12px;color:#aab4c6;margin:12px 0}.tag{font-size:12px;background:#334155;padding:3px 7px;border-radius:20px}.filter{margin:10px 0} @media(min-width:700px){.stats{grid-template-columns:repeat(4,1fr)}}  .position-controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;align-items:end;margin:16px 0}.position-controls button{min-height:42px}
-/* v0.02.000 dashboard */
+/* v0.02.001 dashboard */
 details.fold{margin:13px 0;border:1px solid #334155;border-radius:14px;background:#131e30;overflow:hidden}
 details.fold>summary{cursor:pointer;padding:14px 16px;font-weight:750;font-size:17px;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px}
 details.fold>summary::-webkit-details-marker{display:none}
@@ -13,10 +13,10 @@ details.fold>summary:after{content:'▾';color:#93c5fd}details.fold:not([open])>
 
 :root{--surface:#182235;--edge:#34445f}main{max-width:1250px;padding-top:22px}header{padding-bottom:12px;border-bottom:1px solid var(--edge)}h1{letter-spacing:-.5px}.toolbar{position:sticky;top:0;z-index:8;background:#0b1220ee;backdrop-filter:blur(12px);padding:12px 0;border-bottom:1px solid #28384f}.toolbar>button{font-weight:650}.panel{padding:20px}.gamecard{margin:12px 0}.gamecard summary{cursor:pointer}.market-event{padding:12px;border-bottom:1px solid #334155}.market-event a{color:#a9d1ff}.dash-card{min-width:0}#simselected>div{margin-bottom:8px}@media(max-width:680px){main{padding:12px 10px 80px}.panel{padding:12px}.toolbar{position:static}.toolbar>button{padding:10px;font-size:13px}.formgrid{grid-template-columns:1fr}.position-controls{grid-template-columns:1fr 1fr}.tickets{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
 
-/* v0.02.000 navigation and touch targets */
+/* v0.02.001 navigation and touch targets */
 .toolbar{gap:7px}.toolbar button,.toolbar .btn{min-height:44px}.live-tabs{position:sticky;top:0;z-index:5;background:#131e30;padding:8px 0}.gamecard summary:hover{background:#22314a}.gamecard .body{line-height:1.5}.market-event{line-height:1.6}@media(max-width:680px){.live-tab{min-width:105px}.dash-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.dash-card b{overflow-wrap:anywhere}.toolbar{gap:6px}.toolbar button{font-size:13px}}
 
-/* v0.02.000 responsive, accessible theme + compact markets */
+/* v0.02.001 responsive, accessible theme + compact markets */
 .header-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:flex-end}.theme-control{font-size:12px}.theme-control select{min-width:95px;margin-top:3px;padding:7px;font-size:14px}.odds-compact{grid-column:1/-1;border:1px solid #34445d;background:#1c2a42;border-radius:11px;padding:11px;min-width:0}.odds-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}.odds-scroll{overflow-x:auto}.odds-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:8px;font-variant-numeric:tabular-nums}.odds-table th,.odds-table td{padding:9px 5px;text-align:center;border-bottom:1px solid #34445d}.odds-table thead th{font-size:12px;color:#aab4c6;font-weight:500}.odds-table tbody th{text-align:left;font-size:15px}.odds-table td strong{display:block;font-size:16px}.odds-table td small{display:block;font-size:12px;color:#aab4c6}.odds-compact .small-note{margin:7px 0 0}#simselected>.dash-card{padding:10px 12px;margin-bottom:7px}#simselected .position-controls{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px;align-items:end}#simselected .position-controls label{flex:1 1 120px}#simselected .position-controls input{padding:8px}#simselected .position-controls button{min-height:40px;padding:7px 11px;flex:0 0 auto}
 @media(max-width:480px){main{padding:10px 8px 75px}header{align-items:flex-start}h1{font-size:19px}.header-actions{gap:5px}.theme-control{font-size:11px}.theme-control select{min-width:75px;padding:6px}#new{font-size:12px;padding:7px}.toolbar{display:flex;flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:10px}.toolbar>button,.toolbar>.btn{flex:0 0 auto;scroll-snap-align:start}.odds-compact{padding:8px}.odds-table th,.odds-table td{padding:7px 2px}.odds-table td strong{font-size:13px}.odds-table td small{font-size:11px}.odds-table thead th{font-size:10px}.odds-table tbody th{font-size:12px}#simselected .position-controls label{flex:1 1 95px}#simselected .position-controls button{padding:8px;font-size:12px}.dash-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 html[data-theme="light"]{color-scheme:light}html[data-theme="light"],html[data-theme="light"] body{background:#f4f7fb;color:#152238}html[data-theme="light"] main{color:#152238}html[data-theme="light"] .panel,html[data-theme="light"] .stat,html[data-theme="light"] .ticket,html[data-theme="light"] details.fold,html[data-theme="light"] .gamecard,html[data-theme="light"] .dash-card,html[data-theme="light"] .odds-compact{background:#fff;color:#152238;border-color:#c8d3e1}html[data-theme="light"] .toolbar,html[data-theme="light"] .live-tabs{background:#f4f7fb}html[data-theme="light"] button:not(.primary):not(.live-tab.active),html[data-theme="light"] .btn{background:#e6edf6;color:#152238;border-color:#9aaec8}html[data-theme="light"] input,html[data-theme="light"] select,html[data-theme="light"] textarea{background:#fff;color:#152238;border-color:#8da1ba;color-scheme:light}html[data-theme="light"] label,html[data-theme="light"] small,html[data-theme="light"] .muted,html[data-theme="light"] .notice,html[data-theme="light"] .small-note,html[data-theme="light"] .odds-table thead th,html[data-theme="light"] .odds-table td small{color:#4b5e78}html[data-theme="light"] .odds-table td,html[data-theme="light"] .odds-table th{border-color:#d5deea}html[data-theme="light"] .pill,html[data-theme="light"] .tag{background:#e6edf6;color:#263e5e}html[data-theme="light"] .gamecard summary:hover{background:#eaf1fb}html[data-theme="light"] .toolbar{border-color:#d5deea}html[data-theme="light"] .market-event{border-color:#d5deea}html[data-theme="light"] .live-tab.active{color:#fff}
@@ -112,9 +112,16 @@ body:not(.home-active) #form #cancel{min-height:48px}
 html[data-theme="light"] .monitor-panel{border-color:#b9c7d9}
 html[data-theme="light"] .monitor-metric,html[data-theme="light"] .monitor-item{background:#fff;color:#152238;border-color:#c5d2e0}
 @media(max-width:420px){.monitor-panel{padding:9px}.monitor-controls{flex-direction:column}.monitor-controls select,.monitor-controls input{width:100%}}
+</style><style>
+.sbn-manager{margin:14px 0}.sbn-manager-actions{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.sbn-manager-actions button{flex:1;min-width:115px}
+.sbn-manage-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px 0;border-bottom:1px solid #64748b55;font-size:12px}
+.sbn-manage-item label{flex:1;min-width:0;overflow-wrap:anywhere}
+.sbn-manage-item button{flex-shrink:0;font-size:12px}
+#sbn-manage-list{max-height:310px;overflow:auto;margin:10px 0}
 </style></head><body>
 <section id="apphome" aria-label="Home navigation">
- <div class="home-head"><div><h1>🎟️ Sportsbook Notebook</h1><p>Choose where you'd like to go</p></div><span style="font-size:12px;opacity:.7">v0.02.000</span></div>
+ <div class="home-head"><div><h1>🎟️ Sportsbook Notebook</h1><p>Choose where you'd like to go</p></div><span style="font-size:12px;opacity:.7">v0.02.001</span></div>
  <button id="homeadd" class="monitor-new" type="button">＋ New Ticket</button>
  <section class="monitor-panel" aria-label="Ticket monitor">
   <h2>Ticket Monitor</h2>
@@ -132,10 +139,24 @@ html[data-theme="light"] .monitor-metric,html[data-theme="light"] .monitor-item{
   <button class="home-link" data-go="live"><span class="home-icon">🏒</span><span><span class="home-label">Games &amp; Odds</span><span class="home-sub">Scores and odds by league</span></span><span class="home-arrow">›</span></button>
   <button class="home-link" data-go="simtab"><span class="home-icon">🧮</span><span><span class="home-label">Bet Simulator</span><span class="home-sub">Planning and test tickets</span></span><span class="home-arrow">›</span></button>
  </div>
- <div class="home-tools"><button id="homesettings">⚙ Appearance &amp; backup</button></div>
+ <div class="sbn-manager panel">
+ <h3>Ticket Manager</h3>
+ <p class="small-note">Archive keeps history; deletion is permanent. Export a backup before bulk cleanup.</p>
+ <div class="sbn-manager-actions">
+ <button id="sbn-export">Export backup</button>
+ <button id="sbn-archive-tests">Archive tests / simulations</button>
+ <button id="sbn-archive-settled">Archive settled tickets</button>
+ </div>
+ <label>Manage <select id="sbn-manage-filter"><option value="all">All tickets</option><option value="sim">Test and simulated</option><option value="settled">Settled</option><option value="archived">Archived</option></select></label>
+ <div id="sbn-manage-list"></div>
+ <button id="sbn-delete" class="danger">Delete selected (permanent)</button>
+ </div>
+ <div class="sbn-manager panel"><h3>Game matching</h3><p class="small-note">Load historical and upcoming ESPN results to resolve ticket selections. The original casino lines remain unchanged. For best accuracy, set each ticket's league and event date.</p>
+ <button id="sbn-load-history">Match ticket games</button><p id="sbn-match-status" class="small-note">Not loaded this session.</p></div>
+<div class="home-tools"><button id="homesettings">⚙ Appearance &amp; backup</button></div>
  <div id="homeprefs" class="panel hidden"><label>Appearance <select id="hometheme"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></label><div class="home-tools"><button id="homeexport">Export backup</button><label class="btn" style="flex:1;text-align:center">Import backup<input id="homeimport" type="file" accept="application/json" style="display:none"></label></div></div>
 </section>
-<main><header><button id="backhome" type="button">‹ Home</button><div><h1>🎟️ Sportsbook Notebook</h1><small>Personal ticket ledger · v0.02.000</small></div><div class="header-actions"><label class="theme-control">Appearance <select id="themechoice" aria-label="Appearance"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></label><button id="new">+ Add New Ticket</button></div></header><section class="stats" id="stats"></section><div class="toolbar"><button id="all">All</button><button id="open">Open</button><button id="uncashed">Uncashed winners</button><button id="positions">Positions & overlaps</button><button id="live">🏟️ Live Games & Odds</button><button id="simtab">🧮 Bet Simulator</button><button id="proposals">📋 Proposed bets</button><button id="export">Export backup</button><label class="btn" style="font-size:16px;color:white">Import backup<input id="import" type="file" accept="application/json" style="display:none"></label></div><div class="notice">Ticket OCR is available when online. Review every recognized field before saving. Live feeds require internet; availability varies by provider. Export backups regularly.</div><section id="form" class="panel hidden"><h2 id="formtitle">Add ticket</h2><div class="formgrid"><label>Sportsbook<input id="book" value="South Point"></label><label>Ticket number<input id="ticketno" placeholder="Ticket identifier"></label><label>Bet type<select id="type"><option>Straight</option><option>Parlay</option><option>Round Robin</option><option>Same-game combination</option><option>Other</option></select></label><label>Date<input id="date" type="date"></label><label>Stake ($)<input id="stake" type="number" min="0" step=".01"></label><label>To collect ($, includes stake)<input id="collect" type="number" min="0" step=".01"></label><label class="full">Selections — one per line, include index, team, spread and odds<textarea id="legs" placeholder="Enter each selection on a separate line"></textarea></label><label class="full">Ticket photograph<input id="photo" type="file" accept="image/*" capture="environment"><img id="preview" class="preview hidden" alt="Ticket preview"></label></div><div class="toolbar"><button type="button" id="scan" class="primary">🔎 Read ticket photo (OCR)</button></div><p id="scanstatus" role="status" class="notice">Select or photograph a ticket, then tap Read ticket photo. OCR requires internet access to load its engine. Verify all recognized values.</p><div id="ocrreview" class="panel hidden" aria-live="polite"></div><details open><summary>View recognized text / paste text manually</summary><textarea id="rawocr" placeholder="OCR text appears here; you can also paste ticket text"></textarea><button type="button" id="parse">Populate fields from text</button></details><div class="toolbar"><button class="primary" id="save">Save ticket</button><button id="cancel">Cancel</button></div></section><section id="simulator" class="panel hidden"><h2>🧮 Bet Simulator</h2><p class="notice">Read-only planning. Odds are from ESPN when available; otherwise enter a quoted sportsbook price manually. No order is placed.</p><div class="position-controls"><label>Type<select id="simtype"><option value="Straight">Straight</option><option value="Parlay">Parlay</option><option value="Round Robin">Round Robin</option></select></label><label>Round robin combinations<select id="rrsize"><option value="2">2-team combinations (default)</option><option value="3">3-team combinations</option><option value="all">All combinations (2 teams and up)</option></select></label><label>Wager per bet ($)<input id="simstake" type="number" min="1" step="0.50" value="2"></label><button id="simrefresh" type="button">↻ Load ESPN games</button></div><p class="notice" id="simfeed">Select games and enter the sportsbook's current odds before calculating.</p><div class="test-generator"><strong>🧪 Auto-create test ticket</strong><p class="small-note">Choose straight, 3-leg or 4-leg. Uses distinct loaded ESPN games and verified available moneylines. If fewer games have odds, enter test odds manually in the simulator instead.</p><div class="test-controls"><select id="testlegcount" aria-label="Test ticket legs"><option value="1">Straight (1 leg)</option><option value="3">3-leg parlay</option><option value="4">4-leg parlay</option></select><label>Test stake $<input id="teststake" type="number" min="1" step=".5" value="10"></label><button id="testgenerate" type="button" class="primary">Generate &amp; add test ticket</button></div><small id="testfeedback" role="status"></small></div><div id="simpicks"></div><div class="sim-save-top"><button id="simsavetop" type="button" class="primary" disabled>Save as proposed bet</button><span id="sim-save-hint" aria-live="polite">Select a valid wager to save</span></div><h3>Selected wagers</h3><div id="simselected"></div><div id="simresults" class="dash-grid"></div><p id="enhancedstatus" class="notice">Detailed odds, ESPN prediction and Polymarket will load after ESPN games are retrieved.</p><div class="toolbar"><button id="simsave" class="primary">Save as proposed bet</button><button id="simclear">Clear selections</button></div></section><section id="aggregation" class="panel hidden"></section><section id="livepanel" class="panel hidden"><h2>🏈 Football Live Lab · Read-only</h2><p class="notice">Scores: ESPN unofficial public scoreboard. Market quotes: Polymarket public API. Quotes are market prices, not guaranteed probabilities; spread estimates are not inferred from moneyline prices. No trades or automatic ticket settlement.</p><div class="position-controls"><label>League<select id="liveleague"><option value="nfl">NFL</option><option value="college-football">College football (FBS)</option><option value="nhl">NHL hockey</option></select></label><label>Game date<input id="livedate" type="date"></label><label>Market focus<select id="polymarketseries"><option value="nfl">NFL winner markets</option><option value="college-football">College football (where available)</option></select></label><button id="refreshlive" class="primary">Refresh ESPN + Polymarket</button><button id="refreshespn" type="button">↻ ESPN scores</button><button id="refreshpolymarket" type="button">↻ Polymarket markets</button><label>Auto-refresh<select id="autorefresh"><option value="0">Off</option><option value="60" selected>Every 60 seconds</option><option value="120">Every 2 minutes</option></select></label></div><div class="position-controls"><label style="flex:1;min-width:240px">Optional ESPN feed gateway URL<input id="feedgateway" type="url" placeholder="https://your-worker.your-subdomain.workers.dev" autocomplete="off"></label><button id="savegateway" type="button">Save gateway</button><button id="cleargateway" type="button">Use direct feeds</button></div><p class="notice">Gateway setup is optional. ESPN remains available directly; Polymarket public data may be blocked by browser CORS or unavailable for a particular game.</p><p id="livestatus" class="notice">Press Refresh to load live data. Internet required.</p><div class="live-tabs" role="tablist" aria-label="Live football views"><button type="button" class="live-tab active" data-live-tab="games" aria-selected="true">🏈 Games</button><button type="button" class="live-tab" data-live-tab="tickets" aria-selected="false">🎟️ My Tickets</button><button type="button" class="live-tab" data-live-tab="markets" aria-selected="false">📈 Polymarket</button><button type="button" class="live-tab" data-live-tab="tools" aria-selected="false">🛠️ Diagnostics</button></div><div class="live-tab-pane" data-live-pane="tools" hidden><details class="fold" open><summary>🛠️ Connection diagnostics &amp; manual fallback</summary><div class="foldbody"><strong>Connection diagnostics & manual fallback</strong><p class="notice">If browser requests are blocked, open either source directly, save its JSON response as a file, then load it here. This does not change saved tickets.</p><div class="toolbar"><button id="testfeeds" type="button">Diagnose both feeds</button><button id="openespn" type="button">Open ESPN JSON</button><button id="openpolymarket" type="button">Open Polymarket JSON</button></div><div class="formgrid"><label>Load ESPN scoreboard JSON<input id="espnfile" type="file" accept=".json,application/json,text/plain"></label><label>Load Polymarket markets JSON<input id="polymarketfile" type="file" accept=".json,application/json,text/plain"></label></div><details><summary>Paste JSON response instead</summary><label>Source<select id="jsonsource"><option value="espn">ESPN scoreboard</option><option value="polymarket">Polymarket markets</option></select></label><textarea id="manualjson" placeholder="Paste full JSON response"></textarea><button id="loadmanualjson" type="button">Load pasted JSON</button></details><p class="notice" id="feeddiagnostics" aria-live="polite">No diagnostic run yet.</p></div></details></div><div class="live-tab-pane" data-live-pane="games"><details class="fold" open><summary>📊 Live overview</summary><div class="foldbody" id="liveoverview">Refresh to load dashboard.</div></details><details class="fold" open><summary>🏈 Games &amp; scores</summary><div class="foldbody" id="livegames"></div></details></div><div class="live-tab-pane" data-live-pane="tickets" hidden><details class="fold" open><summary>🎟️ Ticket impact &amp; analytics</summary><div class="foldbody" id="ticketanalytics">Refresh to calculate ticket exposure.</div></details></div><div class="live-tab-pane" data-live-pane="markets" hidden><details class="fold" open><summary>📈 Polymarket markets &amp; unmatched listings</summary><div class="foldbody" id="polymarketmarkets">Not loaded</div></details></div></section><h2 id="heading">Today's notebook</h2><div id="tickets" class="tickets"></div><div class="toolbar"><button id="clear">Delete all tickets</button></div></main><script>
+<main><header><button id="backhome" type="button">‹ Home</button><div><h1>🎟️ Sportsbook Notebook</h1><small>Personal ticket ledger · v0.02.001</small></div><div class="header-actions"><label class="theme-control">Appearance <select id="themechoice" aria-label="Appearance"><option value="auto">Auto</option><option value="light">Light</option><option value="dark">Dark</option></select></label><button id="new">+ Add New Ticket</button></div></header><section class="stats" id="stats"></section><div class="toolbar"><button id="all">All</button><button id="open">Open</button><button id="uncashed">Uncashed winners</button><button id="positions">Positions & overlaps</button><button id="live">🏟️ Live Games & Odds</button><button id="simtab">🧮 Bet Simulator</button><button id="proposals">📋 Proposed bets</button><button id="export">Export backup</button><label class="btn" style="font-size:16px;color:white">Import backup<input id="import" type="file" accept="application/json" style="display:none"></label></div><div class="notice">Ticket OCR is available when online. Review every recognized field before saving. Live feeds require internet; availability varies by provider. Export backups regularly.</div><section id="form" class="panel hidden"><h2 id="formtitle">Add ticket</h2><div class="formgrid"><label>Sportsbook<input id="book" value="South Point"></label><label>Ticket number<input id="ticketno" placeholder="Ticket identifier"></label><label>Bet type<select id="type"><option>Straight</option><option>Parlay</option><option>Round Robin</option><option>Same-game combination</option><option>Other</option></select></label><label>Date<input id="date" type="date"></label><label>Stake ($)<input id="stake" type="number" min="0" step=".01"></label><label>To collect ($, includes stake)<input id="collect" type="number" min="0" step=".01"></label><label class="full">Selections — one per line, include index, team, spread and odds<textarea id="legs" placeholder="Enter each selection on a separate line"></textarea></label><label class="full">Ticket photograph<input id="photo" type="file" accept="image/*" capture="environment"><img id="preview" class="preview hidden" alt="Ticket preview"></label></div><div class="toolbar"><button type="button" id="scan" class="primary">🔎 Read ticket photo (OCR)</button></div><p id="scanstatus" role="status" class="notice">Select or photograph a ticket, then tap Read ticket photo. OCR requires internet access to load its engine. Verify all recognized values.</p><div id="ocrreview" class="panel hidden" aria-live="polite"></div><details open><summary>View recognized text / paste text manually</summary><textarea id="rawocr" placeholder="OCR text appears here; you can also paste ticket text"></textarea><button type="button" id="parse">Populate fields from text</button></details><div class="toolbar"><button class="primary" id="save">Save ticket</button><button id="cancel">Cancel</button></div></section><section id="simulator" class="panel hidden"><h2>🧮 Bet Simulator</h2><p class="notice">Read-only planning. Odds are from ESPN when available; otherwise enter a quoted sportsbook price manually. No order is placed.</p><div class="position-controls"><label>Type<select id="simtype"><option value="Straight">Straight</option><option value="Parlay">Parlay</option><option value="Round Robin">Round Robin</option></select></label><label>Round robin combinations<select id="rrsize"><option value="2">2-team combinations (default)</option><option value="3">3-team combinations</option><option value="all">All combinations (2 teams and up)</option></select></label><label>Wager per bet ($)<input id="simstake" type="number" min="1" step="0.50" value="2"></label><button id="simrefresh" type="button">↻ Load ESPN games</button></div><p class="notice" id="simfeed">Select games and enter the sportsbook's current odds before calculating.</p><div class="test-generator"><strong>🧪 Auto-create test ticket</strong><p class="small-note">Choose straight, 3-leg or 4-leg. Uses distinct loaded ESPN games and verified available moneylines. If fewer games have odds, enter test odds manually in the simulator instead.</p><div class="test-controls"><select id="testlegcount" aria-label="Test ticket legs"><option value="1">Straight (1 leg)</option><option value="3">3-leg parlay</option><option value="4">4-leg parlay</option></select><label>Test stake $<input id="teststake" type="number" min="1" step=".5" value="10"></label><button id="testgenerate" type="button" class="primary">Generate &amp; add test ticket</button></div><small id="testfeedback" role="status"></small></div><div id="simpicks"></div><div class="sim-save-top"><button id="simsavetop" type="button" class="primary" disabled>Save as proposed bet</button><span id="sim-save-hint" aria-live="polite">Select a valid wager to save</span></div><h3>Selected wagers</h3><div id="simselected"></div><div id="simresults" class="dash-grid"></div><p id="enhancedstatus" class="notice">Detailed odds, ESPN prediction and Polymarket will load after ESPN games are retrieved.</p><div class="toolbar"><button id="simsave" class="primary">Save as proposed bet</button><button id="simclear">Clear selections</button></div></section><section id="aggregation" class="panel hidden"></section><section id="livepanel" class="panel hidden"><h2>🏈 Football Live Lab · Read-only</h2><p class="notice">Scores: ESPN unofficial public scoreboard. Market quotes: Polymarket public API. Quotes are market prices, not guaranteed probabilities; spread estimates are not inferred from moneyline prices. No trades or automatic ticket settlement.</p><div class="position-controls"><label>League<select id="liveleague"><option value="nfl">NFL</option><option value="college-football">College football (FBS)</option><option value="nhl">NHL hockey</option></select></label><label>Game date<input id="livedate" type="date"></label><label>Market focus<select id="polymarketseries"><option value="nfl">NFL winner markets</option><option value="college-football">College football (where available)</option></select></label><button id="refreshlive" class="primary">Refresh ESPN + Polymarket</button><button id="refreshespn" type="button">↻ ESPN scores</button><button id="refreshpolymarket" type="button">↻ Polymarket markets</button><label>Auto-refresh<select id="autorefresh"><option value="0">Off</option><option value="60" selected>Every 60 seconds</option><option value="120">Every 2 minutes</option></select></label></div><div class="position-controls"><label style="flex:1;min-width:240px">Optional ESPN feed gateway URL<input id="feedgateway" type="url" placeholder="https://your-worker.your-subdomain.workers.dev" autocomplete="off"></label><button id="savegateway" type="button">Save gateway</button><button id="cleargateway" type="button">Use direct feeds</button></div><p class="notice">Gateway setup is optional. ESPN remains available directly; Polymarket public data may be blocked by browser CORS or unavailable for a particular game.</p><p id="livestatus" class="notice">Press Refresh to load live data. Internet required.</p><div class="live-tabs" role="tablist" aria-label="Live football views"><button type="button" class="live-tab active" data-live-tab="games" aria-selected="true">🏈 Games</button><button type="button" class="live-tab" data-live-tab="tickets" aria-selected="false">🎟️ My Tickets</button><button type="button" class="live-tab" data-live-tab="markets" aria-selected="false">📈 Polymarket</button><button type="button" class="live-tab" data-live-tab="tools" aria-selected="false">🛠️ Diagnostics</button></div><div class="live-tab-pane" data-live-pane="tools" hidden><details class="fold" open><summary>🛠️ Connection diagnostics &amp; manual fallback</summary><div class="foldbody"><strong>Connection diagnostics & manual fallback</strong><p class="notice">If browser requests are blocked, open either source directly, save its JSON response as a file, then load it here. This does not change saved tickets.</p><div class="toolbar"><button id="testfeeds" type="button">Diagnose both feeds</button><button id="openespn" type="button">Open ESPN JSON</button><button id="openpolymarket" type="button">Open Polymarket JSON</button></div><div class="formgrid"><label>Load ESPN scoreboard JSON<input id="espnfile" type="file" accept=".json,application/json,text/plain"></label><label>Load Polymarket markets JSON<input id="polymarketfile" type="file" accept=".json,application/json,text/plain"></label></div><details><summary>Paste JSON response instead</summary><label>Source<select id="jsonsource"><option value="espn">ESPN scoreboard</option><option value="polymarket">Polymarket markets</option></select></label><textarea id="manualjson" placeholder="Paste full JSON response"></textarea><button id="loadmanualjson" type="button">Load pasted JSON</button></details><p class="notice" id="feeddiagnostics" aria-live="polite">No diagnostic run yet.</p></div></details></div><div class="live-tab-pane" data-live-pane="games"><details class="fold" open><summary>📊 Live overview</summary><div class="foldbody" id="liveoverview">Refresh to load dashboard.</div></details><details class="fold" open><summary>🏈 Games &amp; scores</summary><div class="foldbody" id="livegames"></div></details></div><div class="live-tab-pane" data-live-pane="tickets" hidden><details class="fold" open><summary>🎟️ Ticket impact &amp; analytics</summary><div class="foldbody" id="ticketanalytics">Refresh to calculate ticket exposure.</div></details></div><div class="live-tab-pane" data-live-pane="markets" hidden><details class="fold" open><summary>📈 Polymarket markets &amp; unmatched listings</summary><div class="foldbody" id="polymarketmarkets">Not loaded</div></details></div></section><h2 id="heading">Today's notebook</h2><div id="tickets" class="tickets"></div><div class="toolbar"><button id="clear">Delete all tickets</button></div></main><script>
 // Theme selection is independent of the ticket backup and adapts to OS changes.
 const themePreference=window.matchMedia('(prefers-color-scheme: dark)');
 function applyTheme(){const choice=localStorage.getItem('sbn_theme')||'auto';document.documentElement.dataset.theme=choice==='auto'?(themePreference.matches?'dark':'light'):choice;const selector=document.getElementById('themechoice');if(selector)selector.value=choice;}
@@ -364,9 +385,9 @@ $('testfeeds').onclick=async()=>{const b=$('testfeeds');b.disabled=true;const re
 function manualPayload(payload,kind){try{const msg=kind==='espn'?applyScores(payload,'Imported ESPN'):applyMarkets(payload,'Imported Polymarket');$('feeddiagnostics').textContent=msg}catch(e){$('feeddiagnostics').textContent='Import failed: '+explainError(e)}}
 for(const [id,kind] of [['espnfile','espn'],['polymarketfile','polymarket']])$(id).onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{manualPayload(JSON.parse(await file.text()),kind)}catch(err){$('feeddiagnostics').textContent='Invalid JSON: '+explainError(err)}e.target.value=''};
 
-// v0.02.000: local, read-only simulator. All financial figures are gross payout including stake.
+// v0.02.001: local, read-only simulator. All financial figures are gross payout including stake.
 
-// v0.02.000: optional detail enrichment. Missing / blocked data never becomes a fabricated price.
+// v0.02.001: optional detail enrichment. Missing / blocked data never becomes a fabricated price.
 let enhancedGeneration=0;let polyEvents=[];let enhancedMessage='';
 const valNum=x=>{if(x===null||x===undefined||x==='')return null;const n=Number(x);return Number.isFinite(n)?n:null};
 function americanFrom(o){if(o==null)return '';if(typeof o==='object')return americanFrom(o.american??o.moneyLine??o.moneyline??o.value??o.odds);const n=valNum(o);return n!==null&&Math.abs(n)>=100?String(n):''}
@@ -481,6 +502,192 @@ function createAutoTestTicket(){
  $('heading').scrollIntoView({behavior:'smooth'});
 }
 $('testgenerate').addEventListener('click',createAutoTestTicket);
+
+// v0.02.001: persistent archive, cleanup and game-result matching.
+// Ticket's original lines and prices are never overwritten by feed data.
+const sbnGameCache=new Map();
+const sbnLeaguePaths={'nfl':'football/nfl','college-football':'football/college-football','nhl':'hockey/nhl'};
+const sbnAlias={
+ 'ARIZONA CARDINALS':['ARIZONA CARDINALS','CARDINALS','ARI'],
+ 'LAS VEGAS RAIDERS':['LAS VEGAS RAIDERS','RAIDERS','LV','OAKLAND RAIDERS'],
+ 'DALLAS COWBOYS':['DALLAS COWBOYS','COWBOYS','DAL'],
+ 'KANSAS CITY CHIEFS':['KANSAS CITY CHIEFS','CHIEFS','KC'],
+ 'SAN FRANCISCO 49ERS':['SAN FRANCISCO 49ERS','49ERS','NINERS','SF'],
+ 'NEW ENGLAND PATRIOTS':['NEW ENGLAND PATRIOTS','PATRIOTS','NE'],
+ 'TAMPA BAY BUCCANEERS':['TAMPA BAY BUCCANEERS','BUCCANEERS','BUCS','TB'],
+ 'GREEN BAY PACKERS':['GREEN BAY PACKERS','PACKERS','GB'],
+ 'NEW YORK GIANTS':['NEW YORK GIANTS','GIANTS','NYG'],
+ 'NEW YORK JETS':['NEW YORK JETS','JETS','NYJ'],
+ 'LOS ANGELES RAMS':['LOS ANGELES RAMS','RAMS','LAR'],
+ 'LOS ANGELES CHARGERS':['LOS ANGELES CHARGERS','CHARGERS','LAC'],
+ 'WASHINGTON COMMANDERS':['WASHINGTON COMMANDERS','COMMANDERS','WASHINGTON','WAS'],
+ 'OHIO STATE BUCKEYES':['OHIO STATE BUCKEYES','OHIO STATE','BUCKEYES'],
+ 'OLE MISS REBELS':['OLE MISS REBELS','OLE MISS','MISSISSIPPI REBELS'],
+ 'BYU COUGARS':['BYU COUGARS','BYU'],
+ 'LOUISVILLE CARDINALS':['LOUISVILLE CARDINALS','LOUISVILLE']
+};
+const sbnNorm=x=>String(x||'').toUpperCase().replace(/[^A-Z0-9]+/g,' ').trim();
+function sbnNames(gside){
+ const full=sbnNorm(gside.display||gside.name);
+ const aliases=sbnAlias[full]||[];
+ return [...new Set([full,sbnNorm(gside.name),sbnNorm(gside.abbr),...aliases.map(sbnNorm)].filter(x=>x.length>1))];
+}
+function sbnLineInfo(line){
+ const raw=String(line||'').replace(/^\s*\[[^\]]+\]\s*/,'').replace(/[−–—]/g,'-').replace(/½/g,'.5');
+ const ml=/\b(?:ML|MONEYLINE)\b/i.test(raw);
+ const total=/\b(?:OVER|UNDER)\b/i.test(raw);
+ const clean=raw.replace(/\s+[+-]\d{3,5}\s*$/,'').trim(); // remove ticket's price, never use feed odds
+ const spread=clean.match(/(?:^|\s)([+-]\d+(?:\.\d+)?)\s*$/);
+ return {raw,clean,ml,total,spread:spread?Number(spread[1]):null};
+}
+function sbnCandidates(line,t){
+ const info=sbnLineInfo(line),text=sbnNorm(info.clean);
+ const league=t.eventLeague||t.sim?.league||'nfl';
+ const games=[...sbnGameCache.values()].filter(g=>g.league===league);
+ const results=[];
+ for(const g of games){
+  for(const side of ['home','away']){
+   const names=sbnNames(g[side]);
+   const hits=names.filter(n=>n.length>2&&new RegExp('(?:^| )'+n.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?: |$)').test(text));
+   if(!hits.length)continue;
+   const best=Math.max(...hits.map(x=>x.length));
+   const purchase=Date.parse(t.date+'T00:00:00'),event=Date.parse(g.date);
+   if(Number.isFinite(purchase)&&Number.isFinite(event)&&event<purchase-36*3600000)continue;
+   results.push({g,side,score:best});
+  }
+ }
+ results.sort((a,b)=>b.score-a.score);
+ return results;
+}
+function sbnResolve(line,t){
+ const key=t.id+'|'+line;
+ const saved=t.eventLinks?.[line];
+ if(saved){
+  const g=sbnGameCache.get(saved.league+'|'+saved.id);
+  if(g)return {g,side:saved.side,linked:true};
+ }
+ const matches=sbnCandidates(line,t);
+ if(matches.length===1)return matches[0];
+ return {error:matches.length?'ambiguous':'unmatched',matches};
+}
+function sbnResult(line,t){
+ const r=sbnResolve(line,t);
+ if(!r.g)return r.error||'unmatched';
+ const {g,side}=r;
+ if(!g.completed)return g.state==='in'?'live':'pending';
+ const home=Number(g.home.score),away=Number(g.away.score);
+ if(!Number.isFinite(home)||!Number.isFinite(away))return 'unmatched';
+ const margin=side==='home'?home-away:away-home,info=sbnLineInfo(line);
+ if(info.total)return 'unsupported'; // totals need separate market parser
+ if(!info.ml&&!Number.isFinite(info.spread))return 'unsupported';
+ const score=info.ml?margin:margin+info.spread;
+ return score>0?'win':score<0?'loss':'push';
+}
+const sbnOriginalEval=evaluateLeg;
+evaluateLeg=function(leg,t){
+ const r=sbnResult(leg,t);
+ if(r!=='unmatched'&&r!=='ambiguous')return r;
+ return sbnOriginalEval(leg,t);
+};
+const sbnOriginalBadge=evaluationBadge;
+evaluationBadge=function(t){
+ const legs=String(t.legs||'').split('\n').filter(Boolean);
+ if(!legs.length)return '';
+ const results=legs.map(l=>evaluateLeg(l,t));
+ let outcome=results.includes('loss')?'LOSS':results.every(r=>['win','push'].includes(r))?(results.every(r=>r==='push')?'PUSH':'WIN'):results.includes('live')?'LIVE':results.includes('pending')?'PENDING':'NEEDS MATCH';
+ if(t.type==='Round Robin')outcome='CHECK COMBINATIONS';
+ return '<p class="notice">Game evaluation: <b>'+esc(outcome)+'</b> · '+results.map((r,i)=>esc('Leg '+(i+1)+': '+r)).join(' · ')+'<br><small>Uses ticket lines, never ESPN odds. Informational only; settlement remains manual.</small></p>';
+};
+async function sbnFetchHistory(){
+ const status=$('sbn-match-status');status.textContent='Loading event results…';
+ const relevant=data.filter(t=>!t.archived&&!t.proposed);
+ const leagues=new Set(relevant.map(t=>t.eventLeague||t.sim?.league||'nfl'));
+ const today=new Date(), dates=new Set();
+ // Include recent results and the upcoming two weeks, covering advance wagers.
+ for(let offset=-9;offset<=15;offset++){
+  const d=new Date(today);d.setDate(d.getDate()+offset);
+  dates.add(localDateString(d).replace(/-/g,''));
+ }
+ // Include each recorded purchase date and subsequent 7 days.
+ for(const t of relevant){
+  const d=new Date(t.date+'T12:00:00');
+  if(Number.isNaN(d.getTime()))continue;
+  for(let offset=0;offset<=7;offset++){
+   const day=new Date(d);day.setDate(day.getDate()+offset);
+   dates.add(localDateString(day).replace(/-/g,''));
+  }
+ }
+ const jobs=[];
+ for(const league of leagues)for(const day of dates)jobs.push({league,day});
+ let ok=0,failed=0,events=0;
+ // Bounded concurrency, with de-duplication and no repeated fetches during one session.
+ for(let i=0;i<jobs.length;i+=5){
+  const batch=jobs.slice(i,i+5);
+  await Promise.all(batch.map(async ({league,day})=>{
+   const key=league+'|'+day;
+   if(sbnFetchedDays.has(key))return;
+   sbnFetchedDays.add(key);
+   try{
+    const url='https://site.api.espn.com/apis/site/v2/sports/'+sbnLeaguePaths[league]+'/scoreboard?dates='+day+(league==='college-football'?'&groups=80&limit=150':'');
+    const payload=await jsonFetch(url);
+    for(const e of payload.events||[]){
+     const c=e.competitions?.[0]?.competitors||[];
+     const h=c.find(x=>x.homeAway==='home'),a=c.find(x=>x.homeAway==='away');
+     if(!h||!a)continue;
+     const side=x=>({display:x.team?.displayName||'',name:x.team?.name||'',abbr:x.team?.abbreviation||'',score:x.score??null});
+     const game={espnId:String(e.id),league,date:e.date,home:side(h),away:side(a),completed:!!e.status?.type?.completed,state:e.status?.type?.state||'pre'};
+     sbnGameCache.set(league+'|'+game.espnId,game);events++;
+    }
+    ok++;
+   }catch(e){failed++;sbnFetchedDays.delete(key)}
+  }));
+ }
+ status.textContent='Loaded '+events+' games ('+ok+' date feeds'+(failed?', '+failed+' unavailable':'')+'). Review ambiguous matches manually.';
+ render();sbnRenderManager();
+}
+const sbnFetchedDays=new Set();
+function sbnArchive(id,value){
+ const t=data.find(x=>x.id===id);if(!t)return;
+ if(value&&t.status==='open'&&!confirm('This ticket is still OPEN. Archive anyway?'))return;
+ if(value&&t.status==='win'&&!t.redeemed&&!confirm('This winner is UNCASHED. Archive anyway?'))return;
+ t.archived=!!value;t.archivedAt=value?new Date().toISOString():null;
+ persist();render();sbnRenderManager();
+}
+function sbnBulk(mode){
+ const eligible=data.filter(t=>mode==='sim'?(t.isSimulated||t.proposed):mode==='settled'?(t.status!=='open'&&(t.status!=='win'||t.redeemed)):false).filter(t=>!t.archived);
+ if(!eligible.length){alert('No matching active tickets.');return}
+ if(!confirm('Archive '+eligible.length+' ticket(s)? They can be restored later.'))return;
+ eligible.forEach(t=>{t.archived=true;t.archivedAt=new Date().toISOString()});
+ persist();render();sbnRenderManager();
+}
+function sbnDeleteSelected(){
+ const ids=[...document.querySelectorAll('.sbn-pick:checked')].map(x=>x.value);
+ if(!ids.length)return alert('Select tickets first.');
+ const selected=data.filter(t=>ids.includes(t.id));
+ if(selected.some(t=>t.status==='open'&&!t.isSimulated)||selected.some(t=>t.status==='win'&&!t.redeemed))
+  return alert('Open real tickets and uncashed winners are protected from bulk deletion.');
+ if(!confirm('Permanently delete '+ids.length+' selected tickets? Export a backup first.'))return;
+ if(!confirm('FINAL CONFIRMATION: deletion cannot be undone without a backup.'))return;
+ data=data.filter(t=>!ids.includes(t.id));persist();render();sbnRenderManager();
+}
+function sbnRenderManager(){
+ const host=$('sbn-manage-list');if(!host)return;
+ const f=$('sbn-manage-filter').value;
+ const items=data.filter(t=>f==='archived'?t.archived:f==='sim'?t.isSimulated||t.proposed:f==='settled'?t.status!=='open':true);
+ host.innerHTML=items.map(t=>'<div class="sbn-manage-item"><label><input class="sbn-pick" type="checkbox" value="'+esc(t.id)+'"> <b>'+esc(t.ticketno||t.type)+'</b> · '+esc(t.date)+' · '+esc(t.isSimulated?'TEST':t.status)+(t.archived?' · ARCHIVED':'')+'</label><button type="button" data-sbn-archive="'+esc(t.id)+'">'+(t.archived?'Restore':'Archive')+'</button></div>').join('')||'<p>No matching tickets.</p>';
+}
+const sbnOriginalRender=render;
+render=function(){
+ const result=sbnOriginalRender();
+ // Hide archived records in regular views without removing them from storage.
+ const tickets=$('tickets');
+ if(tickets&&filter!=='proposals'){
+  const visible=data.filter(t=>!t.proposed&&(filter==='all'||filter==='positions'||filter==='open'&&(t.isSimulated?['ACTIVE','PENDING','UNVERIFIED'].includes(testTicketStatus(t)):t.status==='open')||filter==='uncashed'&&t.status==='win'&&!t.redeemed&&!t.isSimulated));
+  [...tickets.querySelectorAll('article.ticket')].forEach((node,i)=>{if(visible[i]?.archived)node.style.display='none'});
+ }
+ if(typeof sbnRenderManager==='function')sbnRenderManager();
+ return result;
+};
 </script>
 <script id="home-v024-script">
 (function(){
@@ -506,6 +713,17 @@ $('testgenerate').addEventListener('click',createAutoTestTicket);
  const theme=byId('themechoice'),homeTheme=byId('hometheme');
  homeTheme.value=theme.value;
  homeTheme.addEventListener('change',()=>{theme.value=homeTheme.value;theme.dispatchEvent(new Event('change',{bubbles:true}))});
+ document.getElementById('sbn-export').onclick=()=>byId('export').click();
+ document.getElementById('sbn-archive-tests').onclick=()=>sbnBulk('sim');
+ document.getElementById('sbn-archive-settled').onclick=()=>sbnBulk('settled');
+ document.getElementById('sbn-manage-filter').onchange=sbnRenderManager;
+ document.getElementById('sbn-delete').onclick=sbnDeleteSelected;
+ document.getElementById('sbn-manage-list').onclick=e=>{
+   const b=e.target.closest('[data-sbn-archive]');if(!b)return;
+   const t=data.find(x=>x.id===b.dataset.sbnArchive);if(t)sbnArchive(t.id,!t.archived);
+ };
+ document.getElementById('sbn-load-history').onclick=sbnFetchHistory;
+ sbnRenderManager();
  openHome();
 })();
 </script>
@@ -529,7 +747,7 @@ $('testgenerate').addEventListener('click',createAutoTestTicket);
  }
  function update(){
   if(typeof data==='undefined')return;
-  const actual=data.filter(real),open=actual.filter(t=>t.status==='open'),uncashed=actual.filter(t=>t.status==='win'&&!t.redeemed);
+  const actual=data.filter(t=>real(t)&&!t.archived),open=actual.filter(t=>t.status==='open'),uncashed=actual.filter(t=>t.status==='win'&&!t.redeemed);
   const atRisk=open.reduce((v,t)=>v+Number(t.stake||0),0);
   const settled=actual.filter(t=>t.status!=='open');
   const profit=settled.reduce((v,t)=>v+(t.status==='win'?Number(t.collect||0):t.status==='push'||t.status==='void'?Number(t.stake||0):0)-Number(t.stake||0),0);
